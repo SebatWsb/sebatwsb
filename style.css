@@ -14,7 +14,7 @@ body {
 
 .offcanvas {
   bottom: 0;
-  height: auto;
+  height: 100%;
   width: 70%;
   overflow-y: hidden;
 }
