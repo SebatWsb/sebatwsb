@@ -1,0 +1,145 @@
+/* Font Navbar */
+.navbar-brand {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas-title {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #5c453e;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+/* footer */
+.offcanvas-footer {
+  background-color: #5c453e;
+  color: #fff;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0);
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+  position: relative;
+}
+
+.shadow-logo {
+  color: #fff;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0) );
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+.me {
+  color: #fff;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0);
+  bottom: 0;
+  position: absolute;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* container 1 = jumbotron overlay */
+.bg-1 {
+  position: relative;
+}
+
+.bg-1::after {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.1));
+  position: absolute;
+}
+
+.bg-2 {
+  position: relative;
+  padding-top: 0.4rem;
+}
+
+.bg-2::after {
+  content: '';
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.1));
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  color: #fff;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0);
+  text-align: left;
+  margin-top: 10%;
+}
+
+.my-btn {
+  background-color: #ba8c34;
+  color: #fff;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0);
+  box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item {
+  display: inline;
+  color: #ba8c34 !important;
+}
+
+/* container 2 */
+.bg-overlay {
+  background-color: #fff;
+}
+
+.judul {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.isi {
+  text-align: justify;
+}
+
+/* footer */
+.footer {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
+  background-color: #5c453e;
+  color: #fff;
+  height: 50px;
+}
+
+.logo-footer {
+  height: 150px;
+  margin-left: 70px;
+}
+
+/* ..................................................... Desktop Version */
+@media (min-width: 992px) { 
+  .navbar-nav {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: uppercase;
+  }
+
+  /* .carousel {
+    left: 20%;
+  } */
+
+  /* footer */
+  .footer {
+    height: 150px;
+  }
+}
