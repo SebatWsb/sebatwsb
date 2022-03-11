@@ -28,15 +28,14 @@
   <body>
     <!-- Navbar offcanvas -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <div class="container">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand d-none d-lg-block" href="#">Citra Design Std</a>
         <a class="navbar-brand d-block d-md-none position-absolute top-50 start-50 translate-middle" href="#">Citra Design Std</a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 70%;">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header justify-content-end">
-            
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-header justify-content-center">
@@ -67,33 +66,27 @@
               </li>
             </ul>
           </div>
-          <div class="offcanvas-footer d-block d-md-none footer-nav">
-            <div class="container-fluid">
-              <div class="row justify-content-center mt-3">
-                <div class="col text-center">
-                  <img src="img/logo-w.png" alt="" class="shadow-logo w-50">
-                </div>
-              </div>
-              <div class="row justify-content-center mt-2 mb-5">
-                <div class="col-2 text-center">
-                  <i class="bi bi-facebook"></i>
-                </div>
-                <div class="col-2 text-center">
-                  <i class="bi bi-instagram"></i>
-                </div>
-                <div class="col-2 text-center">
-                  <i class="bi bi-whatsapp"></i>
-                </div>
-                <div class="col-2 text-center">
-                  <i class="bi bi-envelope"></i>
-                </div>
+          <div class="offcanvas-footer d-flex flex-column justify-content-center align-items-center mb-0 d-block d-md-none">
+            <div class="align-items-center">
+              <div class="col">
+                <img src="img/logo-w.png" alt="" class="shadow-logo logo">
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col text-center me">
-                <h6>Created by <a href="#">AR</a></h6>
-              </div>
+            <div class="align-items-center pt-2 pb-4">
+              <span class="pe-2">
+                <i class="bi bi-facebook"></i>
+              </span>
+              <span class="pe-2">
+                <i class="bi bi-instagram"></i>
+              </span>
+              <span class="pe-2">
+                <i class="bi bi-whatsapp"></i>
+              </span>
+              <span class="">
+                <i class="bi bi-envelope"></i>
+              </span>
             </div>
+            <div class="align-items-center me fs-6">Created by <a href="#">AR</a></div>
           </div>
         </div>
       </div>
@@ -122,16 +115,16 @@
               </h1>
               <h1>Impian Anda</h1>
             </div>
-            <button type="button" class="btn my-btn mt-3 rounded-pill">
+            <a href="#selengkapnya" role="button" class="btn my-btn mt-3 rounded-pill">
               <h5 class="pt-1">Selengkapnya</h5>
-            </button>
+            </a>
           </div>
           <!-- end carousel -->
         </div>
         <!-- end gambar 1 -->
 
         <div class="col-lg-4 ps-lg-2">
-          <div class="row g-2 mb-lg-0 pt-2 pt-lg-0 position-relative animasi">
+          <div class="row g-2 mb-lg-0 pt-2 pt-lg-0 position-relative">
             <div class="col-6">
               <img src="img/img/3.jpg" alt="" class="d-block w-100" data-aos="fade-down-right">
             </div>
@@ -148,20 +141,20 @@
               <img src="img/logo.png" alt="" class="p-4 d-block w-100 rounded-circle shadow bg-light logo" style="--bs-bg-opacity: .95;" data-aos="zoom-in">
             </div>
           </div>
-          <div class="col" data-aos="fade-up">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="row" data-aos="fade-up">
+            <div id="carouselExampleFade" class="col carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item bg-2 active">
-                  <img src="img/slide/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg-2 w-100 active">
+                  <img src="img/slide/slide2.jpg" class="d-block w-100 img" alt="...">
                 </div>
-                <div class="carousel-item bg-2">
-                  <img src="img/slide/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg-2 w-100">
+                  <img src="img/slide/slide3.jpg" class="d-block w-100 img" alt="...">
                 </div>
-                <div class="carousel-item bg-2">
-                  <img src="img/slide/slide4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg-2 w-100">
+                  <img src="img/slide/slide4.jpg" class="d-block w-100 img" alt="...">
                 </div>
-                <div class="carousel-item bg-2">
-                  <img src="img/slide/slide5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg-2 w-100">
+                  <img src="img/slide/slide5.jpg" class="d-block w-100 img" alt="...">
                 </div>
               </div>
             </div>
@@ -172,7 +165,7 @@
     <!-- end container -->
 
     <!-- c2 -->
-    <div class="container-fluid mt-5 pb-5">
+    <div id="selengkapnya" class="container-fluid mt-5 pb-5">
       <div class="row justify-content-evenly">
         <div class="col-lg-4 bg-overlay">
           <div class="judul fs-4 text-center">Perencanaan</div>
@@ -183,9 +176,9 @@
           <div class="isi pt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt corrupti a est cum beatae eum consequatur dolorem totam dignissimos eos, ducimus, ipsam commodi rerum porro vero recusandae tempore quidem et.</div>
         </div>
         <div class="col-8 p-5 text-center">
-          <button type="button" class="btn my-btn mt-3 rounded-pill">
+          <a href="#form" role="button" class="btn my-btn mt-3 rounded-pill">
             <h6 class="pt-1">Pesan Sekarang</h6>
-          </button>
+          </a>
         </div>
       </div>
     </div>

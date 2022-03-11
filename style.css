@@ -1,7 +1,22 @@
-/* Font Navbar */
+body {
+  padding: 0px !important;
+}
+
+/* Navbar */
 .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.offcanvas {
+  bottom: 0;
+  height: auto;
+  width: 70%;
+  overflow-y: hidden;
 }
 
 .offcanvas-title {
@@ -10,19 +25,25 @@
   text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-nav{
-  font-family: 'Alegreya Sans SC', sans-serif;
+.offcanvas-body {
+  height: auto;
 }
 
 /* footer */
 .offcanvas-footer {
+  bottom: 0;
   background-color: #5c453e;
   color: #fff;
   text-shadow: 1.5px 1.5px rgba(0, 0, 0);
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
-  position: relative;
+  display: inline;
+  overflow: hidden;
+}
+
+.logo {
+  width: 100px;
 }
 
 .shadow-logo {
@@ -34,8 +55,6 @@
 .me {
   color: #fff;
   text-shadow: 1.5px 1.5px rgba(0, 0, 0);
-  bottom: 0;
-  position: absolute;
 }
 
 a {
@@ -60,13 +79,14 @@ a {
 }
 
 .bg-2 {
-  position: relative;
   padding-top: 0.4rem;
 }
 
 .bg-2::after {
   content: '';
   display: block;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -77,7 +97,7 @@ a {
 
 .overlay {
   position: absolute;
-  top: 5%;
+  top: 7%;
   right: 0;
   bottom: 0;
   left: 10%;
@@ -133,6 +153,27 @@ a {
     font-family: 'Alegreya Sans SC', sans-serif;
     text-transform: uppercase;
   }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ba8c34;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ba8c34;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
 
   /* .carousel {
     left: 20%;
