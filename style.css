@@ -106,10 +106,16 @@ a {
 }
 
 .my-btn {
+  font-family: 'Shippori Antique B1', sans-serif;
   background-color: #ba8c34;
   color: #fff;
   text-shadow: 1.5px 1.5px rgba(0, 0, 0);
   box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.6);
+}
+
+.my-btn:hover {
+  background-color: #5c453e;
+  color: #fff;
 }
 
 .carousel-item {
@@ -242,10 +248,6 @@ a {
   padding: .5rem;
 }
 
-.modal-footer {
-  border-top: 0;
-}
-
 .modal-close {
   pointer-events: auto;
   color: #5c453e;
@@ -253,6 +255,103 @@ a {
   border: 0;
   border-radius: 50%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.6) !important;
+}
+
+/* Form Pemesanan */
+.container-form {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #ffffff;
+}
+
+.form {
+  width: 920px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 62px 55px 90px 55px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.6) !important;
+}
+
+.form-label {
+  font-family: 'Shippori Antique B1', sans-serif;
+  margin-bottom: 0;
+  margin-top: .5rem;
+  margin-left: .5rem;
+}
+
+.form-control {
+  border-radius: 1rem;
+  background-color: #d6d6d646;
+  border: 0;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.form-select {
+  border-radius: 1rem;
+  background-color: #d6d6d646;
+}
+
+.input-group {
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.my-select-border {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.input-group-text {
+  border-radius: 0 1rem 1rem 0;
+  background-color: #5c453e;
+  color: #fff;
+}
+
+.form-check {
+  margin-top: 1rem;
+}
+
+.form-label-me{
+  font-family: 'Shippori Antique B1', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.form-check-label {
+  flex-direction: column;
+}
+
+.form-check-gambar {
+  margin-top: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #d6d6d646;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.btn-gb {
+  background-color: #fff;
+  color: #000;
+}
+
+.skb {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+}
+
+.perencanaan {
+  display: none;
 }
 
 
