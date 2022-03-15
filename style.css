@@ -164,7 +164,7 @@ a {
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.7);
   background-color: #fff;
   border-color: #aeaeae;
-  font-size: 8px;
+  font-size: 14px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -174,18 +174,12 @@ a {
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.7);
   background-color: rgb(49, 49, 49);
   border-color: #aeaeae;
-  font-size: 8px;
 }
 
 /* card */
 .card {
   border: 0;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-.status {
-  font-size: 11px;
-  color: forestgreen;
 }
 
 .card-text {
@@ -195,7 +189,10 @@ a {
 
 /* Modal Projects */
 .modal-content{
-  background-color: transparent;
+  border: 0;
+}
+
+.modal-body{
   border: 0;
 }
 
@@ -207,21 +204,19 @@ a {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 1rem;
 }
 
 .card-img-top {
-  border-radius: 1rem;
+  border-radius: .3rem;
 }
 
 .judul-modal {
-  background-color: #aeaeae;
+  background-color: #5c453e;
   color: #fff;
   padding-top: .5rem;
   padding-bottom: .5rem;
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.7);
-  border-radius: 5rem;
+  border-radius: .2rem;
 }
 
 .card-body {
@@ -234,10 +229,11 @@ a {
 }
 
 .modal-ket {
-  font-size: 12px;
+  font-size: 14px;
   color: #a6adb4;
   height: auto;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: justify;
 }
 
@@ -248,11 +244,12 @@ a {
 
 .modal-footer {
   border-top: 0;
-  padding: 0;
 }
 
 .modal-close {
-  background-color : #fff;
+  pointer-events: auto;
+  color: #5c453e;
+  background-color : #ffffff;
   border: 0;
   border-radius: 50%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.6) !important;
