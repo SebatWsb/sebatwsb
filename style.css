@@ -96,6 +96,7 @@ a {
 .overlay {
   position: absolute;
   top: 7%;
+  height: fit-content;
   right: 0;
   bottom: 0;
   left: 10%;
