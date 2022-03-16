@@ -117,17 +117,15 @@
           </div>
           <div class="col-12">
             <label for="inputJenisDesain" class="form-label">Jenis Desain</label>
+            <button type="button" class="bg-transparent rounded-circle border-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Pilih Jenis Desain">
+              <i class="bi bi-info-circle"></i>
+            </button>
             <div class="input-group">
               <select class="form-select" id="JenisDesain">
-                <option value="">Pilih Jenis Desain</option>
-                <option value="perencanaan" selected>Perencanaan</option>
+                <option value="" selected>Pilih Jenis Desain</option>
+                <option value="perencanaan">Perencanaan</option>
                 <option value="renovasi">Renovasi</option>
               </select>
-              <label class="my-btn-info" type="button">
-                <button class="rounded-circle border-0">
-                  <i class="bi bi-info-lg"></i>
-                </button>
-              </label>
             </div>
           </div>
 
@@ -142,7 +140,7 @@
                     <option>Kos</option>
                   </select>
                 </div>
-              </div>              
+              </div>        
               <div class="col-12">
                 <label class="form-label">Jumlah Lantai</label>
                 <div class="input-group">
@@ -160,186 +158,210 @@
                   <label class="input-group-text my-btn-info" for="inputGroupSelect02">m<sup>2</sup></label>
                 </div>
               </div>
-
-              <!-- Accordion Collapse Pilih Gambar -->
-              <div class="col-12 accordion form-check-gambar" id="accordionPanelsStayOpenExample">
-                <div class="input-group accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="my-btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gbkerja" aria-expanded="true" aria-controls="gbkerja">
-                    Pilih Gambar Kerja
-                  </button>
-                  <label class="my-btn-info">
-                    <button class="rounded-circle border-0">
-                      <i class="bi bi-info-lg"></i>
-                    </button>
-                  </label>
-                </div>
-                <div id="gbkerja" class="row accordion-collapse collapse ps-4 pb-3" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="col-lg-4 mt-2">
-                    <h6>Denah</h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">2D Denah</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">2D Tampak Depan</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">2D Tampak Belakang</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">2D Tampak Samping Kanan</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">2D Tampak Samping Kiri</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-2">
-                    <h6>Struktur</h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Gambar Struktural</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Pondasi</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Slof & Kolom</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Balok</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Ringbalk</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Plat Lantai</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-2">
-                    <h6>Arsitektural</h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Pola Lantai</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Rencana Kusen Pintu</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-2">
-                    <h6>Mekanikal</h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Plafond</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Titik Bangun</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana AC</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Penangkal Petir</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-2">
-                    <h6>Sanitasi</h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Air Kotor</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Air Bersih</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Rencana Air Hujan</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 mt-2">
-                    <h6>Lain<sup>2</sup></h6>
-                    <div>
-                      <div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Atap</label>
-                        </div>
-                        <div class="col">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">Denah Situasi</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label for="formFile" class="form-label">Foto Denah (Opsional)</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
             </div>
             <!-- Perencanaan End -->
 
             <!-- Renovasi -->
             <div class="renovasi">
               <div class="col-12">
-                <label for="inputJenisDesain" class="form-label">Jenis Renovasi</label>
+                <label class="form-label">Jenis Renovasi</label>
                 <div class="input-group">
-                  <select class="form-select" id="JenisDesain" aria-label="Example select with button addon">
-                    <option>Pilih...</option>
+                  <select class="form-select" id="JenisRenovasi" aria-label="Example select with button addon">
+                    <option>Pilih Jesis Renovasi</option>
                     <option>Rumah</option>
                     <option>Kos</option>
                   </select>
-                  <button class="btn my-btn my-select-border" type="button">Selengkapnya..</button>
                 </div>
-              </div>
+              </div>        
               <div class="col-12">
-                <label for="inputJenisDesain" class="form-label">Jumlah Lantai</label>
+                <label class="form-label">Jumlah Lantai</label>
                 <div class="input-group">
-                  <select class="form-select" id="JenisDesain" aria-label="Example select with button addon">
-                    <option>Pilih...</option>
+                  <select class="form-select" id="JumlahLantai" aria-label="Example select with button addon">
+                    <option>Pilih Jumlah Lantai</option>
                     <option>1 Lantai</option>
                     <option>2 Lantai</option>
                   </select>
-                  <button class="btn my-btn my-select-border" type="button">Selengkapnya..</button>
+                </div>
+              </div>   
+              <div class="col-12">
+                <label for="inputJenisDesain" class="form-label">Luas Tanah</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="inputName">
+                  <label class="input-group-text my-btn-info" for="inputGroupSelect02">m<sup>2</sup></label>
                 </div>
               </div>
             </div>
             <!-- Renovasi End -->
+
+            <!-- Pilih Paket -->
+            <div class="col-12">
+              <label class="form-label">Pilih Paket</label>
+              <button type="button" class="bg-transparent rounded-circle border-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Pilih Paket sesuai kebutuhan atau bisa pilih custom">
+                <i class="bi bi-info-circle"></i>
+              </button>
+              <div class="input-group">
+                <select class="form-select" id="PilihPaket" aria-label="Example select with button addon">
+                  <option value="" selected>Pilih Paket</option>
+                  <option value="p1">Paket 1</option>
+                  <option value="p2">Paket 2</option>
+                  <option value="p3">Paket 3</option>
+                  <option value="p4">Paket 4</option>
+                  <option value="custom">Paket Custom</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Accordion Collapse Pilih Gambar -->
+            <div class="custom col-12 accordion form-check-gambar" id="accordionPanelsStayOpenExample">
+              <div class="input-group accordion-header" id="panelsStayOpen-headingOne">
+                <button class="my-btn-accordion collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gbkerja" aria-expanded="true" aria-controls="gbkerja">
+                  Pilih Gambar Kerja
+                </button>
+                <label class="my-btn-info">
+                  <button type="button" class="bg-light rounded-circle border-0" data-bs-toggle="tooltip" data-bs-placement="left" title="Pilih Gambar Kerja Sesuai Kebutuhan Anda">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </label>
+              </div>
+              <div id="gbkerja" class="row accordion-collapse collapse ps-4 pb-3" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="col-lg-4 mt-2">
+                  <h6>Denah</h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">2D Denah</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">2D Tampak Depan</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">2D Tampak Belakang</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">2D Tampak Samping Kanan</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">2D Tampak Samping Kiri</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <h6>Struktur</h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Gambar Struktural</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Pondasi</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Slof & Kolom</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Balok</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Ringbalk</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Plat Lantai</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <h6>Arsitektural</h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Pola Lantai</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Rencana Kusen Pintu</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <h6>Mekanikal</h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Plafond</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Titik Bangun</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana AC</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Penangkal Petir</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <h6>Sanitasi</h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Air Kotor</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Air Bersih</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Rencana Air Hujan</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <h6>Lain<sup>2</sup></h6>
+                  <div>
+                    <div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Atap</label>
+                      </div>
+                      <div class="col">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Denah Situasi</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- Form Upload -->
+          <div class="col-12">
+            <label for="formFile" class="form-label">Foto Denah (Opsional)</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
 
           <div class="col-12 mb-4">
             <div class="form-check">
@@ -399,6 +421,7 @@
     <script>
     $(document).ready(function() {
       var id = "#JenisDesain";
+      var jp = "#PilihPaket";
       $(id).change(function() {
         $(this).find("option:selected").each(function() {
           var optionValue = $(this).attr("value");
@@ -412,6 +435,18 @@
           }
         });
       }).change();
+
+      $(jp).change(function() {
+        $(this).find("option:selected").each(function() {
+          var optionValue = $(this).attr("value");
+          if (optionValue) {
+            $("." + optionValue).slideDown();
+            $(".custom").not("." + optionValue).slideUp();
+          } else {
+            $(".custom").slideUp();
+          }
+        });
+      }).change();
     });
     </script>
 
@@ -420,6 +455,14 @@
       $('.my-btn').click(function() {
           $(this).find('i').toggleClass('bi bi-chevron-down bi bi-chevron-up');
       });
+    </script>
+
+    <!-- tooltips -->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
     </script>
 
   </body>

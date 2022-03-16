@@ -260,7 +260,7 @@ a {
 /* Form Pemesanan */
 .container-form {
   width: 100%;
-  min-height: 100vh;
+  min-height: 88.8vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -268,10 +268,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 15px;
+  padding-top: 65px;
   padding-bottom: 15px;
   background: #ffffff;
 }
