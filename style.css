@@ -281,29 +281,29 @@ a {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 62px 55px 90px 55px;
+  padding: 60px 50px 90px 50px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.6) !important;
 }
 
 .form-label {
   font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: 100;
   margin-bottom: 0;
   margin-top: .5rem;
   margin-left: .5rem;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.7);
 }
 
 .form-control {
   border-radius: 1rem;
-  background-color: #d6d6d646;
-  border: 0;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  background-color: #b3b3b346;
+  border: 3px solid #5c453e33;
 }
 
 .form-select {
   border-radius: 1rem;
-  background-color: #d6d6d646;
-  border: 0;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  background-color: #b3b3b346;
+  border: 3px solid #5c453e33;
 }
 
 .input-group {
