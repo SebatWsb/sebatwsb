@@ -473,7 +473,7 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+      <form name="submit-to-google-sheet" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -489,11 +489,20 @@
           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
         </div>
         <div class="my-3">
-          <div class="loading">Loading</div>
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">Your message has been sent. Thank you!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <!-- <div class="loading">Loading</div>
           <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
+          <div class="sent-message">Your message has been sent. Thank you!</div> -->
         </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <div class="text-center">
+          <button type="submit" class="btn-kirim">Send Message</button>
+          <button type="submit" class=" d-none btn-loading" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Sending...
+          </button>
+        </div>
       </form>
 
     </div>
@@ -507,14 +516,45 @@
     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
   </div>
 
+  <!-- contact form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKSC86lcHXliRk5Y4wK5ds5HrSnWc1M7EkIV3M1sq0ZOuPPWBv49KZNlYe13Ymsydj/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector(".btn-loading");
+    const myAlert = document.querySelector(".my-alert");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((response) => {
+          // tampilkan tombol kirim, hilangkan tombol loading
+          btnLoading.classList.toggle("d-none");
+          btnKirim.classList.toggle("d-none");
+          // tampilkan tombol alert
+          myAlert.classList.toggle("d-none");
+          //reset form
+          form.reset();
+
+          console.log("Success!", response);
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
